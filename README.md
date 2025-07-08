@@ -22,11 +22,11 @@ The pipeline is designed to be a scalable and robust platform for handling real-
 
 **Data Flow:**
 1.  **Ingestion:** A Python script (`producer.py`) calls the official [SPTrans Olho Vivo API](https://www.sptrans.com.br/desenvolvedores/) to fetch real-time bus location data.
-2.  **Messaging Queue:** The collected data is published as messages to an **Apache Kafka** topic, creating a durable and scalable data stream.
-3.  **Stream Processing:** An **Apache Spark** Structured Streaming job consumes the data from the Kafka topic in real-time. It applies transformations, cleans the data, and converts data types.
-4.  **Data Lake Storage:** The processed data is written to a local **Data Lake** in the highly efficient, columnar **Parquet** format.
-5.  **Orchestration:** The entire workflow is scheduled, monitored, and automated by **Apache Airflow**, ensuring that the tasks run in the correct order and handling failures gracefully.
-6.  **BI & Analysis:** The final data stored in the Parquet files is connected to **Power BI** for creating interactive dashboards and to **Jupyter Notebooks** for in-depth analysis using Spark SQL.
+2.  **Messaging Queue:** The collected data is published as messages to an Kafka topic, creating a durable and scalable data stream.
+3.  **Stream Processing:** An Spark Structured Streaming job consumes the data from the Kafka topic in real-time. It applies transformations, cleans the data, and converts data types.
+4.  **Data Lake Storage:** The processed data is written to a local Data Lake in the highly efficient, columnar Parquet format.
+5.  **Orchestration:** The entire workflow is scheduled, monitored, and automated by Apache Airflow, ensuring that the tasks run in the correct order and handling failures gracefully.
+6.  **BI & Analysis:** The final data stored in the Parquet files is connected to Power BI for creating interactive dashboards and to Jupyter Notebooks for in-depth analysis using Spark SQL.
 
 ## 🛠️ Technologies Used
 
