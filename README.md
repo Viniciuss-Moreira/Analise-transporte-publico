@@ -143,5 +143,5 @@ Building this end-to-end pipeline involved overcoming several real-world data en
 
 **Vinicius Moreira**
 
--   [LinkedIn](https://www.linkedin.com/in/vinicius-moreira-806105350)
+-   [LinkedIn](https://www.linkedin.com/in/viniciusmoreira-)
 -   [GitHub](https://github.com/Viniciuss-Moreira)
